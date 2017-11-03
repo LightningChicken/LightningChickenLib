@@ -3,10 +3,6 @@
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
       <module name="LightningChickenLib_main" target="1.8" />
-      <module name="LightningChickenLib_raiti" target="1.8" />
-      <module name="LightningChickenLib_s" target="1.8" />
-      <module name="LightningChickenLib_src" target="1.8" />
-      <module name="LightningChickenLib_srcDir" target="1.8" />
       <module name="LightningChickenLib_test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
