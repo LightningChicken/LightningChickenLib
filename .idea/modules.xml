@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/LightningChickenLib.iml" filepath="$PROJECT_DIR$/.idea/LightningChickenLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/LightningChickenLib.iml" filepath="$PROJECT_DIR$/.idea/modules/LightningChickenLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/LightningChickenLib_main.iml" filepath="$PROJECT_DIR$/.idea/modules/LightningChickenLib_main.iml" group="LightningChickenLib" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/LightningChickenLib_test.iml" filepath="$PROJECT_DIR$/.idea/modules/LightningChickenLib_test.iml" group="LightningChickenLib" />
     </modules>
   </component>
 </project>
