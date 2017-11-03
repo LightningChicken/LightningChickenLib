@@ -1,2 +1,5 @@
 # LightningChickenLib
-An usual library for our projects
+Lightning Chickenにおける各Project用のライブラリです。
+
+## Features
+- [Raiti'sApi](https://github.com/raiti-chan/Raiti-s-api)のKotlin拡張
