@@ -166,7 +166,8 @@ fun BooleanArray.addAll(vararg addArray: Boolean): BooleanArray {
  * @return 追加後の配列
  */
 fun ByteArray.addAll(vararg addArrays: ByteArray): ByteArray {
-    return ArraysUtility.addAll(this, *addArrays)
+    addArrays.forEach { ArraysUtility.addAll(this, it) }
+    return this
 }
 
 /**
@@ -176,7 +177,8 @@ fun ByteArray.addAll(vararg addArrays: ByteArray): ByteArray {
  * @return 追加後の配列
  */
 fun ShortArray.addAll(vararg addArrays: ShortArray): ShortArray {
-    return ArraysUtility.addAll(this, *addArrays)
+    addArrays.forEach { ArraysUtility.addAll(this, it) }
+    return this
 }
 
 /**
@@ -186,7 +188,8 @@ fun ShortArray.addAll(vararg addArrays: ShortArray): ShortArray {
  * @return 追加後の配列
  */
 fun IntArray.addAll(vararg addArrays: IntArray): IntArray {
-    return ArraysUtility.addAll(this, *addArrays)
+    addArrays.forEach { ArraysUtility.addAll(this, it) }
+    return this
 }
 
 /**
@@ -196,7 +199,8 @@ fun IntArray.addAll(vararg addArrays: IntArray): IntArray {
  * @return 追加後の配列
  */
 fun LongArray.addAll(vararg addArrays: LongArray): LongArray {
-    return ArraysUtility.addAll(this, *addArrays)
+    addArrays.forEach { ArraysUtility.addAll(this, it) }
+    return this
 }
 
 /**
@@ -206,7 +210,8 @@ fun LongArray.addAll(vararg addArrays: LongArray): LongArray {
  * @return 追加後の配列
  */
 fun FloatArray.addAll(vararg addArrays: FloatArray): FloatArray {
-    return ArraysUtility.addAll(this, *addArrays)
+    addArrays.forEach { ArraysUtility.addAll(this, it) }
+    return this
 }
 
 /**
@@ -216,7 +221,8 @@ fun FloatArray.addAll(vararg addArrays: FloatArray): FloatArray {
  * @return 追加後の配列
  */
 fun DoubleArray.addAll(vararg addArrays: DoubleArray): DoubleArray {
-    return ArraysUtility.addAll(this, *addArrays)
+    addArrays.forEach { ArraysUtility.addAll(this, it) }
+    return this
 }
 
 /**
@@ -226,5 +232,6 @@ fun DoubleArray.addAll(vararg addArrays: DoubleArray): DoubleArray {
  * @return 追加後の配列
  */
 fun BooleanArray.addAll(vararg addArrays: BooleanArray): BooleanArray {
-    return ArraysUtility.addAll(this, *addArrays)
+    addArrays.forEach { ArraysUtility.addAll(this, it) }
+    return this
 }
