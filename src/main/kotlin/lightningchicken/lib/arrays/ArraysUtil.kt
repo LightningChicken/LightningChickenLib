@@ -154,6 +154,77 @@ fun DoubleArray.addAll(vararg addArray: Double): DoubleArray {
  * @param addArray 配列に追加したい値。可変長引数。
  * @return 追加後の配列
  */
-fun BooleanArray.addAll(vararg addArray: BooleanArray): BooleanArray {
+fun BooleanArray.addAll(vararg addArray: Boolean): BooleanArray {
     return ArraysUtility.addAll(this, *addArray)
+}
+
+//=================================================================================================
+/**
+ * 指定した配列を全て1つの配列にまとめます。<br>
+ *
+ * @param addArrays 追加する配列
+ * @return 追加後の配列
+ */
+fun ByteArray.addAll(vararg addArrays: ByteArray): ByteArray {
+    return ArraysUtility.addAll(this, *addArrays)
+}
+
+/**
+ * 指定した配列を全て1つの配列にまとめます。<br>
+ *
+ * @param addArrays 追加する配列
+ * @return 追加後の配列
+ */
+fun ShortArray.addAll(vararg addArrays: ShortArray): ShortArray {
+    return ArraysUtility.addAll(this, *addArrays)
+}
+
+/**
+ * 指定した配列を全て1つの配列にまとめます。<br>
+ *
+ * @param addArrays 追加する配列
+ * @return 追加後の配列
+ */
+fun IntArray.addAll(vararg addArrays: IntArray): IntArray {
+    return ArraysUtility.addAll(this, *addArrays)
+}
+
+/**
+ * 指定した配列を全て1つの配列にまとめます。<br>
+ *
+ * @param addArrays 追加する配列
+ * @return 追加後の配列
+ */
+fun LongArray.addAll(vararg addArrays: LongArray): LongArray {
+    return ArraysUtility.addAll(this, *addArrays)
+}
+
+/**
+ * 指定した配列を全て1つの配列にまとめます。<br>
+ *
+ * @param addArrays 追加する配列
+ * @return 追加後の配列
+ */
+fun FloatArray.addAll(vararg addArrays: FloatArray): FloatArray {
+    return ArraysUtility.addAll(this, *addArrays)
+}
+
+/**
+ * 指定した配列を全て1つの配列にまとめます。<br>
+ *
+ * @param addArrays 追加する配列
+ * @return 追加後の配列
+ */
+fun DoubleArray.addAll(vararg addArrays: DoubleArray): DoubleArray {
+    return ArraysUtility.addAll(this, *addArrays)
+}
+
+/**
+ * 指定した配列を全て1つの配列にまとめます。<br>
+ *
+ * @param addArrays 追加する配列
+ * @return 追加後の配列
+ */
+fun BooleanArray.addAll(vararg addArrays: BooleanArray): BooleanArray {
+    return ArraysUtility.addAll(this, *addArrays)
 }
