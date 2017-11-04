@@ -28,7 +28,7 @@
     <output url="file://$MODULE_DIR$/../../out/production/classes" />
     <exclude-output />
     <content url="file://$MODULE_DIR$/../../Raiti's-Api">
-      <sourceFolder url="file://$MODULE_DIR$/../../Raiti's-Api/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../Raiti's-Api/src/main/java" isTestSource="false" />
     </content>
     <content url="file://$MODULE_DIR$/../../src/main">
       <sourceFolder url="file://$MODULE_DIR$/../../src/main/java" isTestSource="false" />

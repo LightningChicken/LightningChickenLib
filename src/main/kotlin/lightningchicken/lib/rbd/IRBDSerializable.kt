@@ -1,6 +1,6 @@
 package lightningchicken.lib.rbd
 
-import raiti.RaitisAPI.DataOperation.RBD.RBD
+import raitichan.raitisapi.DataOperation.RBD.RBD
 
 /**
  * RBDに変換可能であることを表すインターフェースです。

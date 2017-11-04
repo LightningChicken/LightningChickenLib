@@ -1,6 +1,6 @@
 package lightningchicken.lib.arrays
 
-import raiti.RaitisAPI.arrays.ArraysUtility
+import raitichan.raitisapi.arrays.ArraysUtility
 
 //=================================================================================================
 //---------------- add
