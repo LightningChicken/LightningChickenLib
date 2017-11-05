@@ -12,7 +12,7 @@ apply plugin: 'maven'
 
 sourceSets {
     main.kotlin.srcDirs += "src/main/kotlin"
-    main.java.srcDirs += "Raiti's-Api/src"
+    main.java.srcDirs += "Raiti's-Api/src/main/java"
 }
 
 tasks.withType(Jar) {
