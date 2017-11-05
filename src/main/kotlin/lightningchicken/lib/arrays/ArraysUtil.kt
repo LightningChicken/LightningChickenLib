@@ -302,3 +302,24 @@ fun BooleanArray.remove(range: IntRange): BooleanArray {
     }
     return this
 }
+
+/**
+ * 配列の要素をすべて標準出力に出力します。
+ */
+fun ByteArray.print() {
+    ArraysUtility.arraysPrint(this)
+}
+
+/**
+ * 配列の要素をすべて標準出力に出力します。
+ */
+fun IntArray.print() {
+    ArraysUtility.arraysPrint(this)
+}
+
+/**
+ * 配列の要素をすべて標準出力に出力します。
+ */
+fun Array<*>.print() {
+    ArraysUtility.arraysPrint(this)
+}
