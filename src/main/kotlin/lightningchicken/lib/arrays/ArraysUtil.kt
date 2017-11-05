@@ -1,3 +1,4 @@
+@file:Suppress("UNUSED")
 package lightningchicken.lib.arrays
 
 import raitichan.raitisapi.arrays.ArraysUtility
