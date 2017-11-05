@@ -154,8 +154,8 @@ fun BooleanArray.remove(index: Int): BooleanArray {
     return ArraysUtility.remove(this, index)
 }
 
-
 //=================================================================================================
+
 /**
  * 配列の中から指定した番地から指定した数の要素を消去します。
  *
@@ -220,4 +220,84 @@ fun DoubleArray.remove(index: Int, length: Int): DoubleArray {
  */
 fun BooleanArray.remove(index: Int, length: Int): BooleanArray {
     return ArraysUtility.remove(this, index, length)
+}
+
+//=================================================================================================
+
+/**
+ * 配列の中から、Rangeに含まれる番地の要素を削除します。
+ *
+ * @param range 消去するindexのRange
+ */
+fun ByteArray.remove(range: IntRange): ByteArray {
+    val iterator = (range step (range.step - 1)).iterator()
+    while (iterator.hasNext()) {
+        ArraysUtility.remove(this, iterator.nextInt())
+    }
+    return this
+}
+
+/**
+ * 配列の中から、Rangeに含まれる番地の要素を削除します。
+ *
+ * @param range 消去するindexのRange
+ */
+fun ShortArray.remove(range: IntRange): ShortArray {
+    val iterator = (range step (range.step - 1)).iterator()
+    while (iterator.hasNext()) {
+        ArraysUtility.remove(this, iterator.nextInt())
+    }
+    return this
+}
+
+/**
+ * 配列の中から、Rangeに含まれる番地の要素を削除します。
+ *
+ * @param range 消去するindexのRange
+ */
+fun IntArray.remove(range: IntRange): IntArray {
+    val iterator = (range step (range.step - 1)).iterator()
+    while (iterator.hasNext()) {
+        ArraysUtility.remove(this, iterator.nextInt())
+    }
+    return this
+}
+
+/**
+ * 配列の中から、Rangeに含まれる番地の要素を削除します。
+ *
+ * @param range 消去するindexのRange
+ */
+fun FloatArray.remove(range: IntRange): FloatArray {
+    val iterator = (range step (range.step - 1)).iterator()
+    while (iterator.hasNext()) {
+        ArraysUtility.remove(this, iterator.nextInt())
+    }
+    return this
+}
+
+/**
+ * 配列の中から、Rangeに含まれる番地の要素を削除します。
+ *
+ * @param range 消去するindexのRange
+ */
+fun DoubleArray.remove(range: IntRange): DoubleArray {
+    val iterator = (range step (range.step - 1)).iterator()
+    while (iterator.hasNext()) {
+        ArraysUtility.remove(this, iterator.nextInt())
+    }
+    return this
+}
+
+/**
+ * 配列の中から、Rangeに含まれる番地の要素を削除します。
+ *
+ * @param range 消去するindexのRange
+ */
+fun BooleanArray.remove(range: IntRange): BooleanArray {
+    val iterator = (range step (range.step - 1)).iterator()
+    while (iterator.hasNext()) {
+        ArraysUtility.remove(this, iterator.nextInt())
+    }
+    return this
 }
