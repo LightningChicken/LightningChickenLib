@@ -266,7 +266,7 @@ fun <T> Array<T>.remove(index: Int, length: Int): Array<T> {
  * @param range 消去するindexのRange
  */
 fun ByteArray.remove(range: IntRange): ByteArray {
-    val iterator = (range step (range.step - 1)).iterator()
+    val iterator = (range.step(range.step - 1)).iterator()
     while (iterator.hasNext()) {
         ArraysUtility.remove(this, iterator.nextInt())
     }
@@ -279,7 +279,7 @@ fun ByteArray.remove(range: IntRange): ByteArray {
  * @param range 消去するindexのRange
  */
 fun ShortArray.remove(range: IntRange): ShortArray {
-    val iterator = (range step (range.step - 1)).iterator()
+    val iterator = (range.step(range.step - 1)).iterator()
     while (iterator.hasNext()) {
         ArraysUtility.remove(this, iterator.nextInt())
     }
@@ -292,7 +292,7 @@ fun ShortArray.remove(range: IntRange): ShortArray {
  * @param range 消去するindexのRange
  */
 fun IntArray.remove(range: IntRange): IntArray {
-    val iterator = (range step (range.step - 1)).iterator()
+    val iterator = (range.step(range.step - 1)).iterator()
     while (iterator.hasNext()) {
         ArraysUtility.remove(this, iterator.nextInt())
     }
@@ -305,7 +305,7 @@ fun IntArray.remove(range: IntRange): IntArray {
  * @param range 消去するindexのRange
  */
 fun FloatArray.remove(range: IntRange): FloatArray {
-    val iterator = (range step (range.step - 1)).iterator()
+    val iterator = (range.step(range.step - 1)).iterator()
     while (iterator.hasNext()) {
         ArraysUtility.remove(this, iterator.nextInt())
     }
@@ -318,7 +318,7 @@ fun FloatArray.remove(range: IntRange): FloatArray {
  * @param range 消去するindexのRange
  */
 fun DoubleArray.remove(range: IntRange): DoubleArray {
-    val iterator = (range step (range.step - 1)).iterator()
+    val iterator = (range.step(range.step - 1)).iterator()
     while (iterator.hasNext()) {
         ArraysUtility.remove(this, iterator.nextInt())
     }
@@ -331,7 +331,7 @@ fun DoubleArray.remove(range: IntRange): DoubleArray {
  * @param range 消去するindexのRange
  */
 fun BooleanArray.remove(range: IntRange): BooleanArray {
-    val iterator = (range step (range.step - 1)).iterator()
+    val iterator = (range.step(range.step - 1)).iterator()
     while (iterator.hasNext()) {
         ArraysUtility.remove(this, iterator.nextInt())
     }
@@ -344,7 +344,7 @@ fun BooleanArray.remove(range: IntRange): BooleanArray {
  * @param range 消去するindexのRange
  */
 fun <T> Array<T>.remove(range: IntRange): Array<T> {
-    val iterator = (range step (range.step - 1)).iterator()
+    val iterator = (range.step(range.step - 1)).iterator()
     while (iterator.hasNext()) {
         ArraysUtility.remove(this, iterator.nextInt())
     }
