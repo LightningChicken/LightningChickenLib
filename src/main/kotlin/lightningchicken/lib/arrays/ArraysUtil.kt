@@ -5,7 +5,7 @@ import raitichan.raitisapi.arrays.ArraysUtility
 //=================================================================================================
 //---------------- addAll
 /**
- * 指定した配列を全て1つの配列にまとめます。<br>
+ * 指定した配列を全て1つの配列にまとめます。
  *
  * @param addArrays 追加する配列
  * @return 追加後の配列
@@ -16,7 +16,7 @@ fun ByteArray.addAll(vararg addArrays: ByteArray): ByteArray {
 }
 
 /**
- * 指定した配列を全て1つの配列にまとめます。<br>
+ * 指定した配列を全て1つの配列にまとめます。
  *
  * @param addArrays 追加する配列
  * @return 追加後の配列
@@ -27,7 +27,7 @@ fun ShortArray.addAll(vararg addArrays: ShortArray): ShortArray {
 }
 
 /**
- * 指定した配列を全て1つの配列にまとめます。<br>
+ * 指定した配列を全て1つの配列にまとめます。
  *
  * @param addArrays 追加する配列
  * @return 追加後の配列
@@ -38,7 +38,7 @@ fun IntArray.addAll(vararg addArrays: IntArray): IntArray {
 }
 
 /**
- * 指定した配列を全て1つの配列にまとめます。<br>
+ * 指定した配列を全て1つの配列にまとめます。
  *
  * @param addArrays 追加する配列
  * @return 追加後の配列
@@ -49,7 +49,7 @@ fun LongArray.addAll(vararg addArrays: LongArray): LongArray {
 }
 
 /**
- * 指定した配列を全て1つの配列にまとめます。<br>
+ * 指定した配列を全て1つの配列にまとめます。
  *
  * @param addArrays 追加する配列
  * @return 追加後の配列
@@ -60,7 +60,7 @@ fun FloatArray.addAll(vararg addArrays: FloatArray): FloatArray {
 }
 
 /**
- * 指定した配列を全て1つの配列にまとめます。<br>
+ * 指定した配列を全て1つの配列にまとめます。
  *
  * @param addArrays 追加する配列
  * @return 追加後の配列
@@ -71,7 +71,7 @@ fun DoubleArray.addAll(vararg addArrays: DoubleArray): DoubleArray {
 }
 
 /**
- * 指定した配列を全て1つの配列にまとめます。<br>
+ * 指定した配列を全て1つの配列にまとめます。
  *
  * @param addArrays 追加する配列
  * @return 追加後の配列
@@ -81,8 +81,11 @@ fun BooleanArray.addAll(vararg addArrays: BooleanArray): BooleanArray {
     return this
 }
 
+//=================================================================================================
+//---------------- remove
+
 /**
- * 指定したインデックスの配列要素の消去<br>
+ * 指定したインデックスの配列要素の消去
  * 戻り値を配列に再び格納してください。
  *
  * @param index  消去するインデックス
@@ -93,7 +96,7 @@ fun ByteArray.remove(index: Int): ByteArray {
 }
 
 /**
- * 指定したインデックスの配列要素の消去<br>
+ * 指定したインデックスの配列要素の消去
  * 戻り値を配列に再び格納してください。
  *
  * @param index  消去するインデックス
@@ -104,7 +107,7 @@ fun ShortArray.remove(index: Int): ShortArray {
 }
 
 /**
- * 指定したインデックスの配列要素の消去<br>
+ * 指定したインデックスの配列要素の消去
  * 戻り値を配列に再び格納してください。
  *
  * @param index  消去するインデックス
@@ -115,7 +118,7 @@ fun IntArray.remove(index: Int): IntArray {
 }
 
 /**
- * 指定したインデックスの配列要素の消去<br>
+ * 指定したインデックスの配列要素の消去
  * 戻り値を配列に再び格納してください。
  *
  * @param index  消去するインデックス
@@ -126,7 +129,7 @@ fun LongArray.remove(index: Int): LongArray {
 }
 
 /**
- * 指定したインデックスの配列要素の消去<br>
+ * 指定したインデックスの配列要素の消去
  * 戻り値を配列に再び格納してください。
  *
  * @param index  消去するインデックス
@@ -137,7 +140,7 @@ fun FloatArray.remove(index: Int): FloatArray {
 }
 
 /**
- * 指定したインデックスの配列要素の消去<br>
+ * 指定したインデックスの配列要素の消去
  * 戻り値を配列に再び格納してください。
  *
  * @param index  消去するインデックス
@@ -148,7 +151,7 @@ fun DoubleArray.remove(index: Int): DoubleArray {
 }
 
 /**
- * 指定したインデックスの配列要素の消去<br>
+ * 指定したインデックスの配列要素の消去
  * 戻り値を配列に再び格納してください。
  *
  * @param index  消去するインデックス
