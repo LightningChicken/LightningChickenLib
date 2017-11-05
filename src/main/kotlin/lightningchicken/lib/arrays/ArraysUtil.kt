@@ -80,3 +80,80 @@ fun BooleanArray.addAll(vararg addArrays: BooleanArray): BooleanArray {
     addArrays.forEach { ArraysUtility.addAll(this, it) }
     return this
 }
+
+/**
+ * 指定したインデックスの配列要素の消去<br>
+ * 戻り値を配列に再び格納してください。
+ *
+ * @param index  消去するインデックス
+ * @return 消去した配列
+ */
+fun ByteArray.remove(index: Int): ByteArray {
+    return ArraysUtility.remove(this, index)
+}
+
+/**
+ * 指定したインデックスの配列要素の消去<br>
+ * 戻り値を配列に再び格納してください。
+ *
+ * @param index  消去するインデックス
+ * @return 消去した配列
+ */
+fun ShortArray.remove(index: Int): ShortArray {
+    return ArraysUtility.remove(this, index)
+}
+
+/**
+ * 指定したインデックスの配列要素の消去<br>
+ * 戻り値を配列に再び格納してください。
+ *
+ * @param index  消去するインデックス
+ * @return 消去した配列
+ */
+fun IntArray.remove(index: Int): IntArray {
+    return ArraysUtility.remove(this, index)
+}
+
+/**
+ * 指定したインデックスの配列要素の消去<br>
+ * 戻り値を配列に再び格納してください。
+ *
+ * @param index  消去するインデックス
+ * @return 消去した配列
+ */
+fun LongArray.remove(index: Int): LongArray {
+    return ArraysUtility.remove(this, index)
+}
+
+/**
+ * 指定したインデックスの配列要素の消去<br>
+ * 戻り値を配列に再び格納してください。
+ *
+ * @param index  消去するインデックス
+ * @return 消去した配列
+ */
+fun FloatArray.remove(index: Int): FloatArray {
+    return ArraysUtility.remove(this, index)
+}
+
+/**
+ * 指定したインデックスの配列要素の消去<br>
+ * 戻り値を配列に再び格納してください。
+ *
+ * @param index  消去するインデックス
+ * @return 消去した配列
+ */
+fun DoubleArray.remove(index: Int): DoubleArray {
+    return ArraysUtility.remove(this, index)
+}
+
+/**
+ * 指定したインデックスの配列要素の消去<br>
+ * 戻り値を配列に再び格納してください。
+ *
+ * @param index  消去するインデックス
+ * @return 消去した配列
+ */
+fun BooleanArray.remove(index: Int): BooleanArray {
+    return ArraysUtility.remove(this, index)
+}
