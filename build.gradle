@@ -12,7 +12,7 @@ apply plugin: 'maven'
 
 sourceSets {
     main.kotlin.srcDirs += "src/main/kotlin"
-    main.java.srcDirs += "Raiti's-Api/src"
+    main.java.srcDirs += "Raiti's-Api/src/main/java"
 }
 
 tasks.withType(Jar) {
@@ -26,7 +26,6 @@ repositories {
 
 dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib-jre8:$kotlin_version"
-    compile files("libs/juniversalchardet-1.0.3.jar")
 }
 
 compileKotlin {
