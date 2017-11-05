@@ -82,6 +82,17 @@ fun BooleanArray.addAll(vararg addArrays: BooleanArray): BooleanArray {
     return this
 }
 
+/**
+ * 指定した配列を全て1つの配列にまとめます。
+ *
+ * @param addArrays 追加する配列
+ * @return 追加後の配列
+ */
+fun <T> Array<T>.addAll(vararg addArrays: BooleanArray): Array<T> {
+    addArrays.forEach { ArraysUtility.addAll(this, it) }
+    return this
+}
+
 //=================================================================================================
 //---------------- remove
 
@@ -155,6 +166,17 @@ fun BooleanArray.remove(index: Int): BooleanArray {
     return ArraysUtility.remove(this, index)
 }
 
+/**
+ * 指定したインデックスの配列要素の消去
+ *
+ * @param index  消去するインデックス
+ * @return 消去した配列
+ */
+fun <T> Array<T>.remove(index: Int): Array<T> {
+    ArraysUtility.remove(this, index)
+    return this
+}
+
 //=================================================================================================
 
 /**
@@ -222,6 +244,19 @@ fun DoubleArray.remove(index: Int, length: Int): DoubleArray {
 fun BooleanArray.remove(index: Int, length: Int): BooleanArray {
     return ArraysUtility.remove(this, index, length)
 }
+
+/**
+ * 配列の中から指定した番地から指定した数の要素を消去します。
+ *
+ * @param index  消去するインデックス
+ * @param length 消去する数
+ * @return 消去した配列
+ */
+fun <T> Array<T>.remove(index: Int, length: Int): Array<T> {
+    ArraysUtility.remove(this, index, length)
+    return this
+}
+
 
 //=================================================================================================
 
@@ -302,6 +337,22 @@ fun BooleanArray.remove(range: IntRange): BooleanArray {
     }
     return this
 }
+
+/**
+ * 配列の中から、Rangeに含まれる番地の要素を削除します。
+ *
+ * @param range 消去するindexのRange
+ */
+fun <T> Array<T>.remove(range: IntRange): Array<T> {
+    val iterator = (range step (range.step - 1)).iterator()
+    while (iterator.hasNext()) {
+        ArraysUtility.remove(this, iterator.nextInt())
+    }
+    return this
+}
+
+//=================================================================================================
+//---------------- print
 
 /**
  * 配列の要素をすべて標準出力に出力します。
